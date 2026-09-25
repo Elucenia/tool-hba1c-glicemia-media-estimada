@@ -1,0 +1,93 @@
+[
+  {
+    "label": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+    "input": {
+      "hba1c": 7
+    },
+    "expected": {
+      "raw": {
+        "eag": 154.2
+      },
+      "main": "154",
+      "level": "high"
+    },
+    "originalInput": {
+      "hba1c": 7
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "HbA1c 6%: 126 mg/dL",
+    "input": {
+      "hba1c": 6
+    },
+    "expected": {
+      "raw": {
+        "eag": 125.5
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "hba1c": 6
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+    "input": {
+      "hba1c": 5.7
+    },
+    "expected": {
+      "raw": {
+        "eag": 116.89
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "hba1c": 5.7
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "HbA1c 5%: 97 mg/dL",
+    "input": {
+      "hba1c": 5
+    },
+    "expected": {
+      "raw": {
+        "eag": 96.8
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "hba1c": 5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+    "input": {
+      "gme": 154
+    },
+    "expected": {
+      "raw": {
+        "a1c": 6.993
+      },
+      "main": "7,0",
+      "level": "high"
+    },
+    "originalInput": {
+      "gme": 154
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sem nenhum valor: erro",
+    "input": {},
+    "expected": {
+      "error": true
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  }
+]

@@ -1,0 +1,207 @@
+{
+  "tool": {
+    "id": "hba1c-glicemia-media-estimada",
+    "title": "HbA1c e glicemia média estimada (ADAG)",
+    "short": "Conversão entre hemoglobina glicada e glicemia média",
+    "desc": "Converta a hemoglobina glicada (HbA1c) em glicemia média estimada em mg/dL e mmol/L, ou o inverso, pela equação do estudo ADAG.",
+    "lead": "Traduz a HbA1c na glicemia média estimada dos últimos 2 a 3 meses (e vice-versa), pela regressão linear do estudo ADAG.",
+    "spec": [
+      "endocrinologia-e-metabologia",
+      "clinica-medica",
+      "medicina-de-familia-e-comunidade",
+      "medicina-laboratorial"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "hba1c",
+        "HbA1c",
+        "num",
+        {
+          "min": 3,
+          "max": 20,
+          "step": 0.1,
+          "unit": "%",
+          "ph": "7,0",
+          "opt": true
+        }
+      ],
+      [
+        "gme",
+        "ou glicemia média (se não informar a HbA1c)",
+        "num",
+        {
+          "min": 40,
+          "max": 600,
+          "step": 1,
+          "unit": "mg/dL",
+          "ph": "154",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>Glicemia média estimada (mg/dL)</strong> = 28,7 × HbA1c (%) − 46,7.</p><p><strong>Em mmol/L</strong> = 1,59 × HbA1c (%) − 2,59.</p><p>Inversa: HbA1c (%) = (glicemia média + 46,7) ÷ 28,7.</p>",
+    "table": [
+      [
+        "HbA1c",
+        "Glicemia média estimada",
+        "Classificação (ADA)"
+      ],
+      [
+        "5%",
+        "97 mg/dL",
+        "Normal (&lt; 5,7%)"
+      ],
+      [
+        "6%",
+        "126 mg/dL",
+        "Pré-diabetes (5,7 a 6,4%)"
+      ],
+      [
+        "7%",
+        "154 mg/dL",
+        "Diabetes (≥ 6,5%)"
+      ],
+      [
+        "8%",
+        "183 mg/dL",
+        ""
+      ],
+      [
+        "9%",
+        "212 mg/dL",
+        ""
+      ],
+      [
+        "10%",
+        "240 mg/dL",
+        ""
+      ],
+      [
+        "12%",
+        "298 mg/dL",
+        ""
+      ]
+    ],
+    "table_note": "O diagnóstico de diabetes pela HbA1c exige confirmação em segunda amostra (ou outro teste alterado), exceto com hiperglicemia sintomática.",
+    "tips": [
+      "No estudo ADAG, o intervalo de confiança de 95% é largo: HbA1c 7% corresponde a glicemia média de 123 a 185 mg/dL. Use a conversão para educar o paciente, não para ajustar dose.",
+      "Anemias, hemoglobinopatias, doença renal crônica avançada, gestação, transfusão recente e uso de eritropoetina alteram a HbA1c independentemente da glicemia.",
+      "Se houver monitorização contínua de glicose, prefira o tempo no alvo e o GMI (indicador de manejo da glicose) calculados pelo sensor.",
+      "A equação foi derivada em adultos com e sem diabetes (tipo 1 e 2), de várias etnias; em crianças e gestantes a relação é menos estudada."
+    ],
+    "sources": [
+      [
+        "Nathan DM et al. Translating the A1C assay into estimated average glucose values. Diabetes Care, 2008.",
+        "https://doi.org/10.2337/dc08-0545"
+      ],
+      [
+        "American Diabetes Association Professional Practice Committee. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2025. Diabetes Care, 2025.",
+        "https://doi.org/10.2337/dc25-S002"
+      ]
+    ],
+    "cases": [
+      [
+        "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        {
+          "hba1c": 7
+        },
+        {
+          "raw": {
+            "eag": 154.2
+          },
+          "main": "154",
+          "level": "high"
+        }
+      ],
+      [
+        "HbA1c 6%: 126 mg/dL",
+        {
+          "hba1c": 6
+        },
+        {
+          "raw": {
+            "eag": 125.5
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        {
+          "hba1c": 5.7
+        },
+        {
+          "raw": {
+            "eag": 116.89
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "HbA1c 5%: 97 mg/dL",
+        {
+          "hba1c": 5
+        },
+        {
+          "raw": {
+            "eag": 96.8
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        {
+          "gme": 154
+        },
+        {
+          "raw": {
+            "a1c": 6.993
+          },
+          "main": "7,0",
+          "level": "high"
+        }
+      ],
+      [
+        "Sem nenhum valor: erro",
+        [],
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 6,
+      "passed": 6,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
