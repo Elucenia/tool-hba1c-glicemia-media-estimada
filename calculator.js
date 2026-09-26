@@ -1,11 +1,11 @@
-/* tool-hba1c-glicemia-media-estimada · Elucenia · https://github.com/Elucenia/tool-hba1c-glicemia-media-estimada
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-hba1c-glicemia-media-estimada · ELUCENIA · https://github.com/Elucenia/tool-hba1c-glicemia-media-estimada
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"hba1c-glicemia-media-estimada","title":"HbA1c e glicemia média estimada (ADAG)","fields":[["hba1c","HbA1c","num",{"min":3,"max":20,"step":0.1,"unit":"%","ph":"7,0","opt":true}],["gme","ou glicemia média (se não informar a HbA1c)","num",{"min":40,"max":600,"step":1,"unit":"mg/dL","ph":"154","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

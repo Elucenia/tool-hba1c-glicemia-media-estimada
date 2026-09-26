@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-hba1c-glicemia-media-estimada",
   "version": "0.1.0",
-  "description": "HbA1c e glicemia média estimada (ADAG) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "HbA1c e glicemia média estimada (ADAG) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
