@@ -1,0 +1,498 @@
+{
+  "id": "hba1c-glicemia-media-estimada",
+  "at": "2026-10-05T17:29:43.306Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/hba1c-glicemia-media-estimada/calculator.js",
+    "bytes": 5016,
+    "sha256": "9692e1432b12a0a508986e5f5f9836bd934d3d1e7ecf63f75aad0bd605aff124"
+  },
+  "cases": [
+    {
+      "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+      "input": {
+        "hba1c": 7
+      },
+      "obtained": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "154",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 7,
+          "eag": 154.2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "154",
+          "obtained": "154",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.eag",
+          "expected": 154.2,
+          "obtained": 154.2,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a1c",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.eag",
+          "expected": 154.2,
+          "obtained": 154.2,
+          "tolerance": 1.542e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "154",
+          "obtained": "154",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "HbA1c 6%: 126 mg/dL",
+      "input": {
+        "hba1c": 6
+      },
+      "obtained": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "125",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 6,
+          "eag": 125.49999999999999
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.eag",
+          "expected": 125.5,
+          "obtained": 125.49999999999999,
+          "tolerance": 0.050000010000000004,
+          "difference": 1.4210854715202004e-14,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a1c",
+          "expected": 6,
+          "obtained": 6,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.eag",
+          "expected": 125.49999999999999,
+          "obtained": 125.49999999999999,
+          "tolerance": 1.2549999999999998e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "125",
+          "obtained": "125",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+      "input": {
+        "hba1c": 5.7
+      },
+      "obtained": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "117",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 5.7,
+          "eag": 116.89
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.eag",
+          "expected": 116.89,
+          "obtained": 116.89,
+          "tolerance": 0.00500001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a1c",
+          "expected": 5.7,
+          "obtained": 5.7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.eag",
+          "expected": 116.89,
+          "obtained": 116.89,
+          "tolerance": 1.1689e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "117",
+          "obtained": "117",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "HbA1c 5%: 97 mg/dL",
+      "input": {
+        "hba1c": 5
+      },
+      "obtained": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "97",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 5,
+          "eag": 96.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.eag",
+          "expected": 96.8,
+          "obtained": 96.8,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a1c",
+          "expected": 5,
+          "obtained": 5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.eag",
+          "expected": 96.8,
+          "obtained": 96.8,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "97",
+          "obtained": "97",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mg/dL",
+          "obtained": "mg/dL",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+      "input": {
+        "gme": 154
+      },
+      "obtained": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "7,0",
+          "%"
+        ],
+        "label": "HbA1c estimada",
+        "raw": {
+          "a1c": 6.993031358885017,
+          "eag": 154
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "7,0",
+          "obtained": "7,0",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.a1c",
+          "expected": 6.993,
+          "obtained": 6.993031358885017,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.000031358885016707916,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.a1c",
+          "expected": 6.993031358885017,
+          "obtained": 6.993031358885017,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.eag",
+          "expected": 154,
+          "obtained": 154,
+          "tolerance": 1.5399999999999999e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "7,0",
+          "obtained": "7,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "%",
+          "obtained": "%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Sem nenhum valor: erro",
+      "input": {},
+      "obtained": {
+        "error": "Informe a HbA1c ou a glicemia média.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "Informe a HbA1c ou a glicemia média.",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 20,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

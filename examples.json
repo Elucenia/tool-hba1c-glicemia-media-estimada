@@ -1,6 +1,12 @@
 [
   {
-    "label": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+    "id": "hba1c-glicemia-media-estimada",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+    "originalInput": {
+      "hba1c": 7
+    },
     "input": {
       "hba1c": 7
     },
@@ -11,13 +17,34 @@
       "main": "154",
       "level": "high"
     },
-    "originalInput": {
-      "hba1c": 7
+    "recordedResult": {
+      "main": [
+        "154",
+        "mg/dL"
+      ],
+      "label": "Glicemia média estimada",
+      "raw": {
+        "a1c": 7,
+        "eag": 154.2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "HbA1c 6%: 126 mg/dL",
+    "id": "hba1c-glicemia-media-estimada",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "HbA1c 6%: 126 mg/dL",
+    "originalInput": {
+      "hba1c": 6
+    },
     "input": {
       "hba1c": 6
     },
@@ -27,13 +54,34 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "hba1c": 6
+    "recordedResult": {
+      "main": [
+        "125",
+        "mg/dL"
+      ],
+      "label": "Glicemia média estimada",
+      "raw": {
+        "a1c": 6,
+        "eag": 125.49999999999999
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+    "id": "hba1c-glicemia-media-estimada",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+    "originalInput": {
+      "hba1c": 5.7
+    },
     "input": {
       "hba1c": 5.7
     },
@@ -43,13 +91,34 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "hba1c": 5.7
+    "recordedResult": {
+      "main": [
+        "117",
+        "mg/dL"
+      ],
+      "label": "Glicemia média estimada",
+      "raw": {
+        "a1c": 5.7,
+        "eag": 116.89
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "HbA1c 5%: 97 mg/dL",
+    "id": "hba1c-glicemia-media-estimada",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "HbA1c 5%: 97 mg/dL",
+    "originalInput": {
+      "hba1c": 5
+    },
     "input": {
       "hba1c": 5
     },
@@ -59,13 +128,34 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "hba1c": 5
+    "recordedResult": {
+      "main": [
+        "97",
+        "mg/dL"
+      ],
+      "label": "Glicemia média estimada",
+      "raw": {
+        "a1c": 5,
+        "eag": 96.8
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+    "id": "hba1c-glicemia-media-estimada",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+    "originalInput": {
+      "gme": 154
+    },
     "input": {
       "gme": 154
     },
@@ -76,18 +166,46 @@
       "main": "7,0",
       "level": "high"
     },
-    "originalInput": {
-      "gme": 154
+    "recordedResult": {
+      "main": [
+        "7,0",
+        "%"
+      ],
+      "label": "HbA1c estimada",
+      "raw": {
+        "a1c": 6.993031358885017,
+        "eag": 154
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Sem nenhum valor: erro",
+    "id": "hba1c-glicemia-media-estimada",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "Sem nenhum valor: erro",
+    "originalInput": [],
     "input": {},
     "expected": {
       "error": true
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "error": "Informe a HbA1c ou a glicemia média."
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

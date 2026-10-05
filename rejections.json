@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" hba1c",
+    "input": {
+      "hba1c": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" hba1c",
+    "input": {
+      "hba1c": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" hba1c",
+    "input": {
+      "hba1c": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" hba1c",
+    "input": {
+      "hba1c": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} hba1c",
+    "input": {
+      "hba1c": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true hba1c",
+    "input": {
+      "hba1c": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum hba1c",
+    "input": {
+      "hba1c": 2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum hba1c",
+    "input": {
+      "hba1c": 22
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "hba1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" gme",
+    "input": {
+      "hba1c": 7,
+      "gme": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" gme",
+    "input": {
+      "hba1c": 7,
+      "gme": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" gme",
+    "input": {
+      "hba1c": 7,
+      "gme": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" gme",
+    "input": {
+      "hba1c": 7,
+      "gme": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} gme",
+    "input": {
+      "hba1c": 7,
+      "gme": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true gme",
+    "input": {
+      "hba1c": 7,
+      "gme": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum gme",
+    "input": {
+      "hba1c": 7,
+      "gme": 36
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum gme",
+    "input": {
+      "hba1c": 7,
+      "gme": 660
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "gme"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

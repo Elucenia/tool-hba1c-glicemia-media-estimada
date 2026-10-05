@@ -5,13 +5,13 @@
     "short": "Conversão entre hemoglobina glicada e glicemia média",
     "desc": "Converta a hemoglobina glicada (HbA1c) em glicemia média estimada em mg/dL e mmol/L, ou o inverso, pela equação do estudo ADAG.",
     "lead": "Traduz a HbA1c na glicemia média estimada dos últimos 2 a 3 meses (e vice-versa), pela regressão linear do estudo ADAG.",
+    "kind": "Calculadora",
     "spec": [
       "endocrinologia-e-metabologia",
       "clinica-medica",
       "medicina-de-familia-e-comunidade",
       "medicina-laboratorial"
     ],
-    "tier": 1,
     "fields": [
       [
         "hba1c",
@@ -41,55 +41,6 @@
       ]
     ],
     "formula": "<p><strong>Glicemia média estimada (mg/dL)</strong> = 28,7 × HbA1c (%) − 46,7.</p><p><strong>Em mmol/L</strong> = 1,59 × HbA1c (%) − 2,59.</p><p>Inversa: HbA1c (%) = (glicemia média + 46,7) ÷ 28,7.</p>",
-    "table": [
-      [
-        "HbA1c",
-        "Glicemia média estimada",
-        "Classificação (ADA)"
-      ],
-      [
-        "5%",
-        "97 mg/dL",
-        "Normal (&lt; 5,7%)"
-      ],
-      [
-        "6%",
-        "126 mg/dL",
-        "Pré-diabetes (5,7 a 6,4%)"
-      ],
-      [
-        "7%",
-        "154 mg/dL",
-        "Diabetes (≥ 6,5%)"
-      ],
-      [
-        "8%",
-        "183 mg/dL",
-        ""
-      ],
-      [
-        "9%",
-        "212 mg/dL",
-        ""
-      ],
-      [
-        "10%",
-        "240 mg/dL",
-        ""
-      ],
-      [
-        "12%",
-        "298 mg/dL",
-        ""
-      ]
-    ],
-    "table_note": "O diagnóstico de diabetes pela HbA1c exige confirmação em segunda amostra (ou outro teste alterado), exceto com hiperglicemia sintomática.",
-    "tips": [
-      "No estudo ADAG, o intervalo de confiança de 95% é largo: HbA1c 7% corresponde a glicemia média de 123 a 185 mg/dL. Use a conversão para educar o paciente, não para ajustar dose.",
-      "Anemias, hemoglobinopatias, doença renal crônica avançada, gestação, transfusão recente e uso de eritropoetina alteram a HbA1c independentemente da glicemia.",
-      "Se houver monitorização contínua de glicose, prefira o tempo no alvo e o GMI (indicador de manejo da glicose) calculados pelo sensor.",
-      "A equação foi derivada em adultos com e sem diabetes (tipo 1 e 2), de várias etnias; em crianças e gestantes a relação é menos estudada."
-    ],
     "sources": [
       [
         "Nathan DM et al. Translating the A1C assay into estimated average glucose values. Diabetes Care, 2008.",
@@ -171,9 +122,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -182,17 +130,155 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T01:05:00.913Z",
+      "total": 18,
+      "passed": 18,
+      "evidencePath": "reports/review-20261003/additional-native-formula-source-oracles-final19.json",
+      "evidenceSha256": "ec8e8eb58ca9b6360c10490e7f4943d559ab06f68c81fba8ffb757f9477d5fb6",
+      "scope": "Published mg/dL regression and its algebraic inverse only. The study included 507 participants with relatively stable glycemia. Diagnosis and the separately rounded SI equation are outside this test.",
+      "source": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2742903/",
+        "edition": "Nathan et al 2008, ADAG study",
+        "locator": "Results, Figure 1: eAG in mg/dL = 28.7 × A1C − 46.7",
+        "access": "Primary full-text Results and figure equation read.",
+        "scope": "Published mg/dL regression and its algebraic inverse only. The study included 507 participants with relatively stable glycemia. Diagnosis and the separately rounded SI equation are outside this test."
+      },
+      "executionBuild": {
+        "id": "IguaqI9wAzb-9t1Sb-4Ph",
+        "directory": ".next-private-final19"
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "fullSourceConformanceApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "ADAG/Nathan 2008:e AGmg/d L 28,7 Hb A 1 c−46,7; mmol/L 1,59 Hb A 1 c−2,59",
+    "implementationVersion": "hba1c-glicemia-media-estimada@native-2026-10-03+9692e1432b12",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2742903/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Glicemia média estimada (mg/dL) = 28,7 × HbA1c (%) − 46,7. Em mmol/L = 1,59 × HbA1c (%) − 2,59. Inversa: HbA1c (%) = (glicemia média + 46,7) ÷ 28,7.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "hba1c",
+            "label": "HbA1c",
+            "type": "num",
+            "min": 3,
+            "max": 20,
+            "unit": "%",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "gme",
+            "label": "ou glicemia média (se não informar a HbA1c)",
+            "type": "num",
+            "min": 40,
+            "max": 600,
+            "unit": "mg/dL",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "f6fc0b1eb98f83e7cbca9fc74c6252d5db73ead236351588256c441d65b1c131"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Nathan DM et al. Translating the A1C assay into estimated average glucose values. Diabetes Care, 2008.",
+          "url": "https://doi.org/10.2337/dc08-0545",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Translating the A1C assay into estimated average glucose values.",
+            "year": "2008",
+            "firstPublicationDate": "2008-06-07",
+            "doi": "10.2337/dc08-0545",
+            "pmid": "18540046",
+            "pmcid": "PMC2742903",
+            "journal": "Diabetes care",
+            "authors": "Nathan DM, Kuenen J, Borg R, Zheng H, Schoenfeld D, Heine RJ, A1c-Derived Average Glucose Study Group."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2742903/",
+          "abstractAvailable": true,
+          "fullTextSha256": "715bed0f0c2d7d8d56ce0c2b44db6c0375b9678bf13c3db47489da3e5d703237",
+          "abstractSha256": "d1610b47dcf9ff9acbd7b489f9ae472ef70beb4ce3dca8d2b2008dfb50c22286",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "American Diabetes Association Professional Practice Committee. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2025. Diabetes Care, 2025.",
+          "url": "https://doi.org/10.2337/dc25-S002",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2025.",
+            "year": "2025",
+            "firstPublicationDate": "2025-01-01",
+            "doi": "10.2337/dc25-s002",
+            "pmid": "39651986",
+            "pmcid": "PMC11635041",
+            "journal": "Diabetes care",
+            "authors": "American Diabetes Association Professional Practice Committee."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11635041/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "eb155abcf32cfe6344c63f014f867486d74b67fcbd02747944e00541e3495ad4",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T01:05:00.913Z",
+        "total": 18,
+        "passed": 18,
+        "evidencePath": "reports/review-20261003/additional-native-formula-source-oracles-final19.json",
+        "evidenceSha256": "ec8e8eb58ca9b6360c10490e7f4943d559ab06f68c81fba8ffb757f9477d5fb6",
+        "scope": "Published mg/dL regression and its algebraic inverse only. The study included 507 participants with relatively stable glycemia. Diagnosis and the separately rounded SI equation are outside this test."
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "9692e1432b12a0a508986e5f5f9836bd934d3d1e7ecf63f75aad0bd605aff124"
+    },
+    "limits": "A regressão ADAG 2008 foi estudada durante três meses em participantes com glicemia relativamente estável. Crianças, gestantes e pessoas com condições eritrocitárias foram excluídas; anemia, alterações do turnover eritrocitário e hemoglobinopatias podem afetar a interpretação da HbA1c. A glicemia média estimada não é uma medida direta, e a inversa algébrica não constitui teste diagnóstico independente. A unidade e a variante dos coeficientes devem ser preservadas.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.010Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Nem todo ensaio de HbA 1 c ou alteração glicêmica foi avaliado. A fórmula não confirma diagnóstico de diabetes ou equivalência de um valor individual à glicemia medida."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/hba1c-glicemia-media-estimada/calculator.js",
+    "bytes": 5016,
+    "sha256": "9692e1432b12a0a508986e5f5f9836bd934d3d1e7ecf63f75aad0bd605aff124"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "d97b98a58453ab49eca53896032b4dde52171a021289102f20de74e48604a530",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 18,
+      "sha256": "2e2cf3f04d374219c4be53ecfadbac2264eb8161c68fc1216ec8db4740705284",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
