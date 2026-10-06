@@ -69,3 +69,57 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+HbA1c na faixa de diabetes (≥ 6,5%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Glicemia média estimada | 8,6 mmol/L |
+| HbA1c informada | 7,0% |
+
+
+### 2
+
+HbA1c na faixa de pré-diabetes (5,7 a 6,4%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Glicemia média estimada | 7,0 mmol/L |
+| HbA1c informada | 6,0% |
+
+
+### 3
+
+HbA1c na faixa de pré-diabetes (5,7 a 6,4%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Glicemia média estimada | 6,5 mmol/L |
+| HbA1c informada | 5,7% |
+
+
+### 4
+
+HbA1c na faixa normal (< 5,7%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Glicemia média estimada | 5,4 mmol/L |
+| HbA1c informada | 5,0% |
+
+
+### 5
+
+HbA1c na faixa de diabetes (≥ 6,5%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Glicemia média estimada | 8,6 mmol/L |
+| Glicemia média informada | 154 mg/dL |
+

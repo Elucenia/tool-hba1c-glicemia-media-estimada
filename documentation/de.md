@@ -69,3 +69,57 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+HbA1c im Diabetesbereich (≥ 6,5 %)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Geschätzter mittlerer Blutzucker | 8,6 mmol/L |
+| Gemeldete HbA1c | 7,0% |
+
+
+### 2
+
+HbA1c im Prädiabetes-Bereich (5,7 bis 6,4 %)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Geschätzter mittlerer Blutzucker | 7,0 mmol/L |
+| Gemeldete HbA1c | 6,0% |
+
+
+### 3
+
+HbA1c im Prädiabetes-Bereich (5,7 bis 6,4 %)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Geschätzter mittlerer Blutzucker | 6,5 mmol/L |
+| Gemeldete HbA1c | 5,7% |
+
+
+### 4
+
+HbA1c im Normbereich (< 5,7 %)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Geschätzter mittlerer Blutzucker | 5,4 mmol/L |
+| Gemeldete HbA1c | 5,0% |
+
+
+### 5
+
+HbA1c im Diabetesbereich (≥ 6,5 %)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Geschätzter mittlerer Blutzucker | 8,6 mmol/L |
+| Gemeldete mittlere Glukose | 154 mg/dL |
+

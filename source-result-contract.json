@@ -1,0 +1,341 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "hba1c-glicemia-media-estimada",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ce477c7f270eb913f29093e0630005b620f15b2e",
+    "oldEngineSha256": "9692e1432b12a0a508986e5f5f9836bd934d3d1e7ecf63f75aad0bd605aff124",
+    "currentEngineSha256": "eb6be316fc965007581020503dd3237bb17798aadc98f4404b7e8d4b4a97f9a5"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+      "input": {
+        "hba1c": 7
+      },
+      "publicOutput": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "154",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 7,
+          "eag": 154.2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "eag": 154.2
+        },
+        "main": "154",
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "154",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "level": "high",
+        "verdict": "HbA1c na faixa de diabetes (≥ 6,5%)",
+        "rows": [
+          [
+            "Glicemia média estimada",
+            "8,6 mmol/L"
+          ],
+          [
+            "HbA1c informada",
+            "7,0%"
+          ]
+        ],
+        "raw": {
+          "a1c": 7,
+          "eag": 154.2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "HbA1c 6%: 126 mg/dL",
+      "input": {
+        "hba1c": 6
+      },
+      "publicOutput": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "125",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 6,
+          "eag": 125.49999999999999
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "eag": 125.5
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "125",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "level": "mid",
+        "verdict": "HbA1c na faixa de pré-diabetes (5,7 a 6,4%)",
+        "rows": [
+          [
+            "Glicemia média estimada",
+            "7,0 mmol/L"
+          ],
+          [
+            "HbA1c informada",
+            "6,0%"
+          ]
+        ],
+        "raw": {
+          "a1c": 6,
+          "eag": 125.49999999999999
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+      "input": {
+        "hba1c": 5.7
+      },
+      "publicOutput": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "117",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 5.7,
+          "eag": 116.89
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "eag": 116.89
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "117",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "level": "mid",
+        "verdict": "HbA1c na faixa de pré-diabetes (5,7 a 6,4%)",
+        "rows": [
+          [
+            "Glicemia média estimada",
+            "6,5 mmol/L"
+          ],
+          [
+            "HbA1c informada",
+            "5,7%"
+          ]
+        ],
+        "raw": {
+          "a1c": 5.7,
+          "eag": 116.89
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "HbA1c 5%: 97 mg/dL",
+      "input": {
+        "hba1c": 5
+      },
+      "publicOutput": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "97",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "raw": {
+          "a1c": 5,
+          "eag": 96.8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "eag": 96.8
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "97",
+          "mg/dL"
+        ],
+        "label": "Glicemia média estimada",
+        "level": "low",
+        "verdict": "HbA1c na faixa normal (< 5,7%)",
+        "rows": [
+          [
+            "Glicemia média estimada",
+            "5,4 mmol/L"
+          ],
+          [
+            "HbA1c informada",
+            "5,0%"
+          ]
+        ],
+        "raw": {
+          "a1c": 5,
+          "eag": 96.8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+      "input": {
+        "gme": 154
+      },
+      "publicOutput": {
+        "id": "hba1c-glicemia-media-estimada",
+        "main": [
+          "7,0",
+          "%"
+        ],
+        "label": "HbA1c estimada",
+        "raw": {
+          "a1c": 6.993031358885017,
+          "eag": 154
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "a1c": 6.993
+        },
+        "main": "7,0",
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,0",
+          "%"
+        ],
+        "label": "HbA1c estimada",
+        "level": "high",
+        "verdict": "HbA1c na faixa de diabetes (≥ 6,5%)",
+        "rows": [
+          [
+            "Glicemia média estimada",
+            "8,6 mmol/L"
+          ],
+          [
+            "Glicemia média informada",
+            "154 mg/dL"
+          ]
+        ],
+        "raw": {
+          "a1c": 6.993031358885017,
+          "eag": 154
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 5,
+      "name": "Sem nenhum valor: erro",
+      "input": {},
+      "publicOutput": {
+        "error": "Informe a HbA1c ou a glicemia média.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

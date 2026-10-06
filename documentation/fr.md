@@ -69,3 +69,57 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+HbA1c dans l’intervalle du diabète (≥ 6,5 %)
+
+| Détails du résultat | |
+| --- | --- |
+| Glycémie moyenne estimée | 8,6 mmol/L |
+| HbA1c rapportée | 7,0% |
+
+
+### 2
+
+HbA1c dans l’intervalle de prédiabète (5,7 à 6,4 %)
+
+| Détails du résultat | |
+| --- | --- |
+| Glycémie moyenne estimée | 7,0 mmol/L |
+| HbA1c rapportée | 6,0% |
+
+
+### 3
+
+HbA1c dans l’intervalle de prédiabète (5,7 à 6,4 %)
+
+| Détails du résultat | |
+| --- | --- |
+| Glycémie moyenne estimée | 6,5 mmol/L |
+| HbA1c rapportée | 5,7% |
+
+
+### 4
+
+HbA1c dans l’intervalle normal (< 5,7 %)
+
+| Détails du résultat | |
+| --- | --- |
+| Glycémie moyenne estimée | 5,4 mmol/L |
+| HbA1c rapportée | 5,0% |
+
+
+### 5
+
+HbA1c dans l’intervalle du diabète (≥ 6,5 %)
+
+| Détails du résultat | |
+| --- | --- |
+| Glycémie moyenne estimée | 8,6 mmol/L |
+| Glycémie moyenne rapportée | 154 mg/dL |
+

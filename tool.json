@@ -154,7 +154,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "ADAG/Nathan 2008:e AGmg/d L 28,7 Hb A 1 c−46,7; mmol/L 1,59 Hb A 1 c−2,59",
-    "implementationVersion": "hba1c-glicemia-media-estimada@native-2026-10-03+9692e1432b12",
+    "implementationVersion": "hba1c-glicemia-media-estimada@native-2026-10-05+eb6be316fc96",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2742903/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -248,7 +248,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "9692e1432b12a0a508986e5f5f9836bd934d3d1e7ecf63f75aad0bd605aff124"
+      "implementationHash": "eb6be316fc965007581020503dd3237bb17798aadc98f4404b7e8d4b4a97f9a5",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "hba1c-glicemia-media-estimada@native-2026-10-03+9692e1432b12",
+          "previousImplementationHash": "9692e1432b12a0a508986e5f5f9836bd934d3d1e7ecf63f75aad0bd605aff124",
+          "implementationHash": "eb6be316fc965007581020503dd3237bb17798aadc98f4404b7e8d4b4a97f9a5",
+          "scientificBodySha256": "ca5400abc10792f847fbf803f774a48a9b8bb03d1c0a0aa2a582adfe4ef89b15",
+          "metadataContractHash": "f6fc0b1eb98f83e7cbca9fc74c6252d5db73ead236351588256c441d65b1c131",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A regressão ADAG 2008 foi estudada durante três meses em participantes com glicemia relativamente estável. Crianças, gestantes e pessoas com condições eritrocitárias foram excluídas; anemia, alterações do turnover eritrocitário e hemoglobinopatias podem afetar a interpretação da HbA1c. A glicemia média estimada não é uma medida direta, e a inversa algébrica não constitui teste diagnóstico independente. A unidade e a variante dos coeficientes devem ser preservadas.",
     "sourceLimitEvidence": {
@@ -267,15 +295,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/hba1c-glicemia-media-estimada/calculator.js",
-    "bytes": 5016,
-    "sha256": "9692e1432b12a0a508986e5f5f9836bd934d3d1e7ecf63f75aad0bd605aff124"
+    "bytes": 5221,
+    "sha256": "eb6be316fc965007581020503dd3237bb17798aadc98f4404b7e8d4b4a97f9a5"
   },
-  "sourceToolSha256": "d97b98a58453ab49eca53896032b4dde52171a021289102f20de74e48604a530",
+  "sourceToolSha256": "ae63f9244a558921e6a909cfaff4b26c3e6cb8c703a1c68c5f7ed1419b89c830",
   "omittedFullReferenceBanks": [
     {
       "rows": 18,
       "sha256": "2e2cf3f04d374219c4be53ecfadbac2264eb8161c68fc1216ec8db4740705284",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

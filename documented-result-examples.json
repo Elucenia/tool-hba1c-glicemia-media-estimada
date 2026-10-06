@@ -1,0 +1,2247 @@
+{
+  "id": "hba1c-glicemia-media-estimada",
+  "implementationVersion": "hba1c-glicemia-media-estimada@native-2026-10-05+eb6be316fc96",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia média estimada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "7,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c na faixa de diabetes (≥ 6,5%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia média estimada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "7,0 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c na faixa de pré-diabetes (5,7 a 6,4%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia média estimada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6,5 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,7%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c na faixa de pré-diabetes (5,7 a 6,4%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia média estimada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,4 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c na faixa normal (< 5,7%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia média estimada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia média informada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c na faixa de diabetes (≥ 6,5%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Estimated average glucose",
+                "locale": "en",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Reported HbA1c",
+                "locale": "en",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7.0%",
+                "locale": "en",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c in the diabetes range (≥ 6,5%)",
+            "locale": "en",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Estimated average glucose",
+                "locale": "en",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7.0 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Reported HbA1c",
+                "locale": "en",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6.0%",
+                "locale": "en",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c in the prediabetes range (5,7 to 6,4%)",
+            "locale": "en",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Estimated average glucose",
+                "locale": "en",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6.5 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Reported HbA1c",
+                "locale": "en",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.7%",
+                "locale": "en",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c in the prediabetes range (5,7 to 6,4%)",
+            "locale": "en",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Estimated average glucose",
+                "locale": "en",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5.4 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Reported HbA1c",
+                "locale": "en",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.0%",
+                "locale": "en",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c in the normal range (< 5,7%)",
+            "locale": "en",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Estimated average glucose",
+                "locale": "en",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "en",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Reported mean glucose",
+                "locale": "en",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "en",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c in the diabetes range (≥ 6,5%)",
+            "locale": "en",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glucemia media estimada",
+                "locale": "es",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "es",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7,0%",
+                "locale": "es",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c en el rango de diabetes (≥ 6,5%)",
+            "locale": "es",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glucemia media estimada",
+                "locale": "es",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7,0 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "es",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6,0%",
+                "locale": "es",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c en el rango de prediabetes (5,7 a 6,4%)",
+            "locale": "es",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glucemia media estimada",
+                "locale": "es",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6,5 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "es",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,7%",
+                "locale": "es",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c en el rango de prediabetes (5,7 a 6,4%)",
+            "locale": "es",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glucemia media estimada",
+                "locale": "es",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5,4 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c informada",
+                "locale": "es",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,0%",
+                "locale": "es",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c en el rango normal (< 5,7%)",
+            "locale": "es",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glucemia media estimada",
+                "locale": "es",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "es",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glucemia media informada",
+                "locale": "es",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "es",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c en el rango de diabetes (≥ 6,5%)",
+            "locale": "es",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glycémie moyenne estimée",
+                "locale": "fr",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c rapportée",
+                "locale": "fr",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7,0%",
+                "locale": "fr",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c dans l’intervalle du diabète (≥ 6,5 %)",
+            "locale": "fr",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glycémie moyenne estimée",
+                "locale": "fr",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7,0 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c rapportée",
+                "locale": "fr",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6,0%",
+                "locale": "fr",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c dans l’intervalle de prédiabète (5,7 à 6,4 %)",
+            "locale": "fr",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glycémie moyenne estimée",
+                "locale": "fr",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6,5 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c rapportée",
+                "locale": "fr",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,7%",
+                "locale": "fr",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c dans l’intervalle de prédiabète (5,7 à 6,4 %)",
+            "locale": "fr",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glycémie moyenne estimée",
+                "locale": "fr",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5,4 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c rapportée",
+                "locale": "fr",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,0%",
+                "locale": "fr",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c dans l’intervalle normal (< 5,7 %)",
+            "locale": "fr",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glycémie moyenne estimée",
+                "locale": "fr",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "fr",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glycémie moyenne rapportée",
+                "locale": "fr",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "fr",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c dans l’intervalle du diabète (≥ 6,5 %)",
+            "locale": "fr",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Geschätzter mittlerer Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gemeldete HbA1c",
+                "locale": "de",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7,0%",
+                "locale": "de",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c im Diabetesbereich (≥ 6,5 %)",
+            "locale": "de",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Geschätzter mittlerer Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7,0 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gemeldete HbA1c",
+                "locale": "de",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6,0%",
+                "locale": "de",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c im Prädiabetes-Bereich (5,7 bis 6,4 %)",
+            "locale": "de",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Geschätzter mittlerer Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6,5 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gemeldete HbA1c",
+                "locale": "de",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,7%",
+                "locale": "de",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c im Prädiabetes-Bereich (5,7 bis 6,4 %)",
+            "locale": "de",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Geschätzter mittlerer Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5,4 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gemeldete HbA1c",
+                "locale": "de",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,0%",
+                "locale": "de",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c im Normbereich (< 5,7 %)",
+            "locale": "de",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Geschätzter mittlerer Blutzucker",
+                "locale": "de",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "de",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gemeldete mittlere Glukose",
+                "locale": "de",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "de",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c im Diabetesbereich (≥ 6,5 %)",
+            "locale": "de",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia media stimata",
+                "locale": "it",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c riportata",
+                "locale": "it",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7,0%",
+                "locale": "it",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c nell’intervallo di diabete (≥ 6,5%)",
+            "locale": "it",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia media stimata",
+                "locale": "it",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7,0 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c riportata",
+                "locale": "it",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6,0%",
+                "locale": "it",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c nell’intervallo di prediabete (5,7 a 6,4%)",
+            "locale": "it",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia media stimata",
+                "locale": "it",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6,5 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c riportata",
+                "locale": "it",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,7%",
+                "locale": "it",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c nell’intervallo di prediabete (5,7 a 6,4%)",
+            "locale": "it",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia media stimata",
+                "locale": "it",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5,4 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c riportata",
+                "locale": "it",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5,0%",
+                "locale": "it",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c nell’intervallo normale (< 5,7%)",
+            "locale": "it",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Glicemia media stimata",
+                "locale": "it",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8,6 mmol/L",
+                "locale": "it",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Glicemia media riportata",
+                "locale": "it",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "it",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c nell’intervallo di diabete (≥ 6,5%)",
+            "locale": "it",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "متوسط غلوكوز الدم المقدر",
+                "locale": "ar",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "٨٫٦ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c المُبلَّغ عنها",
+                "locale": "ar",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "٧٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c ضمن نطاق السكري (≥ 6,5%)",
+            "locale": "ar",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "متوسط غلوكوز الدم المقدر",
+                "locale": "ar",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "٧٫٠ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c المُبلَّغ عنها",
+                "locale": "ar",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "٦٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c ضمن نطاق ما قبل السكري (5,7 إلى 6,4%)",
+            "locale": "ar",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "متوسط غلوكوز الدم المقدر",
+                "locale": "ar",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "٦٫٥ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c المُبلَّغ عنها",
+                "locale": "ar",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "٥٫٧%",
+                "locale": "ar",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c ضمن نطاق ما قبل السكري (5,7 إلى 6,4%)",
+            "locale": "ar",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "متوسط غلوكوز الدم المقدر",
+                "locale": "ar",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "٥٫٤ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "HbA1c المُبلَّغ عنها",
+                "locale": "ar",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "٥٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c ضمن النطاق الطبيعي (< 5,7%)",
+            "locale": "ar",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "متوسط غلوكوز الدم المقدر",
+                "locale": "ar",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "٨٫٦ mmol/L",
+                "locale": "ar",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "متوسط الغلوكوز المُبلَّغ عنه",
+                "locale": "ar",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "١٥٤ mg/dL",
+                "locale": "ar",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c ضمن نطاق السكري (≥ 6,5%)",
+            "locale": "ar",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "估算平均血糖",
+                "locale": "zh",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "报告的 HbA1c",
+                "locale": "zh",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7.0%",
+                "locale": "zh",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c 处于糖尿病范围（≥ 6,5%）",
+            "locale": "zh",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "估算平均血糖",
+                "locale": "zh",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7.0 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "报告的 HbA1c",
+                "locale": "zh",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6.0%",
+                "locale": "zh",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c 处于糖尿病前期范围（5,7 至 6,4%）",
+            "locale": "zh",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "估算平均血糖",
+                "locale": "zh",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6.5 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "报告的 HbA1c",
+                "locale": "zh",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.7%",
+                "locale": "zh",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c 处于糖尿病前期范围（5,7 至 6,4%）",
+            "locale": "zh",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "估算平均血糖",
+                "locale": "zh",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5.4 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "报告的 HbA1c",
+                "locale": "zh",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.0%",
+                "locale": "zh",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c 处于正常范围（< 5,7%）",
+            "locale": "zh",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "估算平均血糖",
+                "locale": "zh",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "zh",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "报告的平均血糖",
+                "locale": "zh",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "zh",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c 处于糖尿病范围（≥ 6,5%）",
+            "locale": "zh",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推定平均血糖",
+                "locale": "ja",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "報告された HbA1c",
+                "locale": "ja",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7.0%",
+                "locale": "ja",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c は糖尿病範囲（≥ 6,5%）",
+            "locale": "ja",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推定平均血糖",
+                "locale": "ja",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7.0 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "報告された HbA1c",
+                "locale": "ja",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6.0%",
+                "locale": "ja",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c は前糖尿病範囲（5,7～6,4%）",
+            "locale": "ja",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推定平均血糖",
+                "locale": "ja",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6.5 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "報告された HbA1c",
+                "locale": "ja",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.7%",
+                "locale": "ja",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c は前糖尿病範囲（5,7～6,4%）",
+            "locale": "ja",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推定平均血糖",
+                "locale": "ja",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5.4 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "報告された HbA1c",
+                "locale": "ja",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.0%",
+                "locale": "ja",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c は正常範囲（< 5,7%）",
+            "locale": "ja",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "推定平均血糖",
+                "locale": "ja",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "ja",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "報告された平均血糖",
+                "locale": "ja",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "ja",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c は糖尿病範囲（≥ 6,5%）",
+            "locale": "ja",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "HbA1c 7%: 154 mg/dL (exemplo do ADAG)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अनुमानित औसत रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रिपोर्ट की गई HbA1c",
+                "locale": "hi",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "7.0%",
+                "locale": "hi",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c मधुमेह सीमा में (≥ 6,5%)",
+            "locale": "hi",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HbA1c 6%: 126 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अनुमानित औसत रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "7.0 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रिपोर्ट की गई HbA1c",
+                "locale": "hi",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "6.0%",
+                "locale": "hi",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  6
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c प्रीडायबिटीज़ सीमा में (5,7 से 6,4%)",
+            "locale": "hi",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5,7% (corte do pré-diabetes): 117 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अनुमानित औसत रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "6.5 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  6.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रिपोर्ट की गई HbA1c",
+                "locale": "hi",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.7%",
+                "locale": "hi",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c प्रीडायबिटीज़ सीमा में (5,7 से 6,4%)",
+            "locale": "hi",
+            "template": "documented-authored-a7366e653d81c691f5db"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "HbA1c 5%: 97 mg/dL",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अनुमानित औसत रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "5.4 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  5.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रिपोर्ट की गई HbA1c",
+                "locale": "hi",
+                "template": "documented-authored-3bfa2d72d23e83ee9eda"
+              },
+              "value": {
+                "text": "5.0%",
+                "locale": "hi",
+                "template": "documented-authored-aa9873f3d597d02eda66",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c सामान्य सीमा में (< 5,7%)",
+            "locale": "hi",
+            "template": "documented-authored-adb1792c4e0a2581d0cc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Glicemia média 154 mg/dL: HbA1c 7,0%",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अनुमानित औसत रक्त ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-63fd681ca5d72603fc14"
+              },
+              "value": {
+                "text": "8.6 mmol/L",
+                "locale": "hi",
+                "template": "documented-authored-c94f9871abd098581fe3",
+                "sourceNumbers": [
+                  8.6
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "रिपोर्ट की गई औसत ग्लूकोज़",
+                "locale": "hi",
+                "template": "documented-authored-b2bf8b53aa3076f45a39"
+              },
+              "value": {
+                "text": "154 mg/dL",
+                "locale": "hi",
+                "template": "documented-authored-04f14342f2079ef907f6",
+                "sourceNumbers": [
+                  154
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "HbA1c मधुमेह सीमा में (≥ 6,5%)",
+            "locale": "hi",
+            "template": "documented-authored-69965c69a4e1723d3b10"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

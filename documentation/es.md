@@ -69,3 +69,57 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+HbA1c en el rango de diabetes (≥ 6,5%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Glucemia media estimada | 8,6 mmol/L |
+| HbA1c informada | 7,0% |
+
+
+### 2
+
+HbA1c en el rango de prediabetes (5,7 a 6,4%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Glucemia media estimada | 7,0 mmol/L |
+| HbA1c informada | 6,0% |
+
+
+### 3
+
+HbA1c en el rango de prediabetes (5,7 a 6,4%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Glucemia media estimada | 6,5 mmol/L |
+| HbA1c informada | 5,7% |
+
+
+### 4
+
+HbA1c en el rango normal (< 5,7%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Glucemia media estimada | 5,4 mmol/L |
+| HbA1c informada | 5,0% |
+
+
+### 5
+
+HbA1c en el rango de diabetes (≥ 6,5%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Glucemia media estimada | 8,6 mmol/L |
+| Glucemia media informada | 154 mg/dL |
+

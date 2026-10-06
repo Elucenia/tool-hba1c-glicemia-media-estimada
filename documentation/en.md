@@ -69,3 +69,57 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+HbA1c in the diabetes range (≥ 6,5%)
+
+| Result details | |
+| --- | --- |
+| Estimated average glucose | 8.6 mmol/L |
+| Reported HbA1c | 7.0% |
+
+
+### 2
+
+HbA1c in the prediabetes range (5,7 to 6,4%)
+
+| Result details | |
+| --- | --- |
+| Estimated average glucose | 7.0 mmol/L |
+| Reported HbA1c | 6.0% |
+
+
+### 3
+
+HbA1c in the prediabetes range (5,7 to 6,4%)
+
+| Result details | |
+| --- | --- |
+| Estimated average glucose | 6.5 mmol/L |
+| Reported HbA1c | 5.7% |
+
+
+### 4
+
+HbA1c in the normal range (< 5,7%)
+
+| Result details | |
+| --- | --- |
+| Estimated average glucose | 5.4 mmol/L |
+| Reported HbA1c | 5.0% |
+
+
+### 5
+
+HbA1c in the diabetes range (≥ 6,5%)
+
+| Result details | |
+| --- | --- |
+| Estimated average glucose | 8.6 mmol/L |
+| Reported mean glucose | 154 mg/dL |
+
